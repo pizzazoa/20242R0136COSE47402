@@ -1,0 +1,4 @@
+An example picture from the personalcolor dataset depicting a fallWarm
+An example picture from the personalcolor dataset depicting a springWarm
+An example picture from the personalcolor dataset depicting a summerCool
+An example picture from the personalcolor dataset depicting a winterCool
