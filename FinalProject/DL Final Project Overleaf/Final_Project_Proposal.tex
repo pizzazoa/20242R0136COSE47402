@@ -1,0 +1,136 @@
+%%%%%%%% ICML 2019 EXAMPLE LATEX SUBMISSION FILE %%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
+
+% hyperref makes hyperlinks in the resulting PDF.
+% If your build breaks (sometimes temporarily if a hyperlink spans a page)
+% please comment out the following usepackage line and replace
+% \usepackage{icml2019} with \usepackage[nohyperref]{icml2019} above.
+\usepackage{hyperref}
+
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+% Use the following line for the initial blind version submitted for review:
+%\usepackage{icml2019}
+
+% If accepted, instead use the following line for the camera-ready submission:
+\usepackage[accepted]{icml2019}
+
+% The \icmltitle you define below is probably too long as a header.
+% Therefore, a short form for the running title is supplied here:
+\icmltitlerunning{COSE474-2024F: Final Project Proposal}
+
+\begin{document}
+
+\twocolumn[
+\icmltitle{COSE474-2024F: Final Project Proposal \\
+           ``Training deep learning models for photo-based personal color suggestions ''} 
+
+% It is OKAY to include author information, even for blind
+% submissions: the style file will automatically remove it for you
+% unless you've provided the [accepted] option to the icml2019
+% package.
+
+% List of affiliations: The first argument should be a (short)
+% identifier you will use later to specify author affiliations
+% Academic affiliations should list Department, University, City, Region, Country
+% Industry affiliations should list Company, City, Region, Country
+
+% You can specify symbols, otherwise they are numbered in order.
+% Ideally, you should not use this facility. Affiliations will be numbered
+% in order of appearance and this is the preferred way.
+\icmlsetsymbol{equal}{*}
+
+\begin{icmlauthorlist}
+\icmlauthor{Hanjun Park}{}
+\end{icmlauthorlist}
+
+%\icmlaffiliation{ku}{Department of Computer Science \& Engineering, Korea University, Seoul, Korea}
+
+
+%\icmlcorrespondingauthor{the}{myemail@korea.ac.kr}
+%\icmlcorrespondingauthor{Eee Pppp}{ep@eden.co.uk}
+
+% You may provide any keywords that you
+% find helpful for describing your paper; these are used to populate
+% the "keywords" metadata in the PDF but will not be shown in the document
+\icmlkeywords{Machine Learning, ICML}
+
+\vskip 0.3in
+]
+
+% this must go after the closing bracket ] following \twocolumn[ ...
+
+% This command actually creates the footnote in the first column
+% listing the affiliations and the copyright notice.
+% The command takes one argument, which is text to display at the start of the footnote.
+% The \icmlEqualContribution command is standard text for equal contribution.
+% Remove it (just {}) if you do not need this facility.
+
+%\printAffiliationsAndNotice{}  % leave blank if no need to mention equal contribution
+%\printAffiliationsAndNotice{\icmlEqualContribution} % otherwise use the standard text.
+
+%\begin{abstract}
+%This document provides a basic paper template and submission guidelines.
+%Abstracts must be a single paragraph, ideally between 4--6 sentences long.
+%Gross violations will trigger corrections at the camera-ready phase.
+%\end{abstract}
+
+\section{Introduction}
+
+Personal color analysis is a task that requires expertise and experience, and it is difficult for many people to find their optimal color without the help of experts. Accordingly, it is necessary to develop a deep learning-based system that automatically suggests personal color by analyzing person photos. These systems can help users easily discover colors that suit them and make fashion and beauty choices more effective.  
+
+\section{Problem definition \& chanllenges}
+\subsection{Problem Definition}
+The goal of this project is to develop a system to automatically analyze and propose personal colors from person photographs by leveraging pre-trained deep learning-based models (e.g., ResNet, EfficientNet, etc.). It aims to build models that maintain high accuracy even in various environments.
+
+\subsection{Challenges}
+\textbf{data diversity}: Datasets for personal color analysis should include different races, skin tones, lighting conditions, etc. 
+
+\textbf{Accurate facial recognition and feature extraction}: accurately extracting and analyzing various facial features such as skin tone, hair color, and eye color is a technically complex challenge.  
+
+\section{Related Works }
+Existing studies have attempted to analyze personal colors by utilizing computer vision and machine learning technologies. For example, a system has been developed that analyzes face images to classify skin chromaticity distribution and recommend colors accordingly.  
+Recently, deep learning models, especially convolutional neural networks (CNNs), have been utilized to enable more sophisticated color analysis and recommendations. However, studies that fully consider the constraints such as lighting conditions are lacking, and there are limitations in increasing the accuracy of personalized recommendations.
+
+\section{Datasets}
+- Personal Color Classification (PCC) Dataset
+
+- Kaggle, Github, etc...
+
+
+\section{State-of-the-art methods and baselines}
+\begin{itemize}
+    \item \textbf{Comparison target:} Recently announced personal color analysis models (e.g., Transformer-based models, image generation models using GAN, etc.)
+    \item \textbf{Attribute:}
+        \begin{itemize}
+        \item \textbf{classification accuracy:} Accuracy assessment of personal color classification using accuracy, F1 score, confusion matrix, etc
+        \item \textbf{Model Efficiency:} Evaluate the complexity of the model by number of parameters, amount of computation (FLOPs), etc
+        \item \textbf{inference rate:} Measure images per second (FPS) to evaluate real-time processability
+        \end{itemize}
+\end{itemize}
+
+\section{Goals}
+\textbf{Model development:} Leveraging a pre-trained CNN-based vision model, we build the foundation of the model to automatically analyze and propose personal colors for person photo input.
+
+\textbf{Performance Improvement:} Aim to achieve significant performance improvements compared to existing personal color analysis models. In particular, we want to achieve competitive results in terms of accuracy.
+
+\section{Schedule}
+\textbf{Week 9-11}: Research related literature, collection of datasets and Data preprocessing
+
+\textbf{Week 12-13}: Model Implementation and Initial Experiments
+
+\textbf{Week 14-15}: Model Optimization and Performance Evaluation
+
+\textbf{Week 16}: Analysis of results and final report
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
